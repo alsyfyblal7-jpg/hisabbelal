@@ -1,0 +1,39 @@
+{
+  "entities": {
+    "Backup": {
+      "title": "Cloud Backup",
+      "description": "Store settings and customer databases securely for a merchant user",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Google User UID from Auth"
+        },
+        "email": {
+          "type": "string",
+          "description": "Google connected email address"
+        },
+        "customers": {
+          "type": "array",
+          "description": "The entire customer accounts list with their ledger sheets"
+        },
+        "settings": {
+          "type": "object",
+          "description": "Store name, currency, and general merchant configurations"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The time the backup was saved"
+        }
+      },
+      "required": ["userId", "email", "customers", "settings", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/backups/{userId}": {
+      "schema": "Backup",
+      "description": "Store settings and ledger details of merchants by their Google UID"
+    }
+  }
+}

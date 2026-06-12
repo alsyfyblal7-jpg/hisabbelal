@@ -1,0 +1,6 @@
+{
+  "name": "Bilal Accountant",
+  "description": "تطبيق بلال المحاسبي البسيط لإدارة ديون وسداد العملاء بنظام مرن وواجهات أنيقة",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

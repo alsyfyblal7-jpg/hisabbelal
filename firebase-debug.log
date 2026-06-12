@@ -1,0 +1,62 @@
+[debug] [2026-06-11T23:42:13.446Z] ----------------------------------------------------------------------
+[debug] [2026-06-11T23:42:13.452Z] Command:       /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/firebase init
+[debug] [2026-06-11T23:42:13.453Z] CLI Version:   15.20.0
+[debug] [2026-06-11T23:42:13.453Z] Platform:      android
+[debug] [2026-06-11T23:42:13.454Z] Node Version:  v26.2.0
+[debug] [2026-06-11T23:42:13.454Z] Time:          Fri Jun 12 2026 02:42:13 GMT+0300 (Arabian Standard Time)
+[debug] [2026-06-11T23:42:13.455Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /storage/emulated/0/Download/bilal-accountant (1)
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-06-11T23:47:45.782Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-06-11T23:47:45.784Z] > authorizing via signed-in user (alsyfyblal7@gmail.com)
+[debug] [2026-06-11T23:47:45.789Z] Checked if tokens are valid: true, expires at: 1781224865852
+[debug] [2026-06-11T23:47:45.789Z] Checked if tokens are valid: true, expires at: 1781224865852
+[debug] [2026-06-11T23:47:45.794Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-06-11T23:47:46.921Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-06-11T23:47:46.922Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Hosting Setup
+[debug] [2026-06-11T23:49:25.708Z] Error: Cannot find module 'vite'
+Require stack:
+- /data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/frameworks/utils.js
+- /data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/frameworks/index.js
+- /data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js
+- /data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/init/features/index.js
+- /data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/init/index.js
+- /data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/commands/init.js
+- /data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/commands/index.js
+- /data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/index.js
+- /data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/bin/cli.js
+- /data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/bin/firebase.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1519:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1073:27)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1124:12)
+    at require.resolve (node:internal/modules/helpers:209:31)
+    at relativeRequire (/data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/frameworks/utils.js:210:34)
+    at getConfig (/data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/frameworks/vite/index.js:112:65)
+    at discover (/data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/frameworks/vite/index.js:65:68)
+    at async /data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/frameworks/vite/index.js:44:55
+    at async discover (/data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/frameworks/index.js:50:32)
+    at async Object.askQuestions (/data/data/com.termux/files/usr/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js:23:33)
+[error] 
+[error] Error: An unexpected error has occurred.
